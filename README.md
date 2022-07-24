@@ -20,7 +20,7 @@ Lets setup the Gradle files. In this project we will be using View binding featu
 
 <img src="README%20Images/Gradle.jpg" width="400">
 
-Add the following code to the Project build.gradle file in the dependencies block:
+- Add the following code to the Project build.gradle file in the dependencies block:
 
 ```Kotlin
 classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.0"
@@ -29,7 +29,7 @@ Should look like this:
 
 <img src="README%20Images/projectGradle.jpg" width="400">
 
-Now we will edit the Module build.gradle file. Add the following implementations to the dependencies block:
+- Now we will edit the Module build.gradle file. Add the following implementations to the dependencies block:
 
 ```Kotlin
 implementation 'androidx.navigation:navigation-fragment-ktx:2.5.0'
@@ -39,7 +39,7 @@ Should look like this:
 
 <img src="README%20Images/mbuildgradle.jpg" width="400">
 
-Add the following plugin to the plugins block 
+- Add the following plugin to the plugins block 
 
 ```Kotlin
 id 'androidx.navigation.safeargs'
@@ -49,7 +49,7 @@ Should look like this:
 
 <img src="README%20Images/Plugins .jpg" width="400">
 
-Add the following code to the android block:
+- Add the following code to the android block:
 
 ```Kotlin
 buildFeatures {
@@ -66,32 +66,32 @@ Now we are ready to start creating the project itself. To start, go to the resou
 
 <img src="README%20Images/resmeng.jpg" width="400">
 
-Name your nav file and click ok 
+- Name your nav file and click ok 
 
 <img src="README%20Images/mynavname.jpg" width="400">
 
-Now we will create two fragments, to later setup the navigation between them. To do so click the little phone icon with a green plus
+- Now we will create two fragments, to later setup the navigation between them. To do so click the little phone icon with a green plus
 
 <img src="README%20Images/addfragment.jpg" width="400">
 
-Click create new destination and select blank Fragment and name it.
+- Click create new destination and select blank Fragment and name it.
 
 <img src="README%20Images/createnewdest.jpg" width="400">
 <img src="README%20Images/fragmentname.jpg" width="400">
 
-Do the same steps for the second fragment. The result should look like this:
+- Do the same steps for the second fragment. The result should look like this:
 
 <img src="README%20Images/createdfragemnts.jpg" width="400">
 
-Now click and drag the little bubble on the right side of the mainFragment and connect it to secondFragment. Then do the same thing back, it should look like this:
+- Now click and drag the little bubble on the right side of the mainFragment and connect it to secondFragment. Then do the same thing back, it should look like this:
 
 <img src="README%20Images/dothesameback.jpg" width="400">
 
-Now you have to create a Nev Host fragment (our Main activity). To do so go to the XML of the main activity and in the search bar type "frag…". A NavHostFragment will show up. Click and drag the NavHostFragment to the main activity layout:
+- Now you have to create a Nev Host fragment (our Main activity). To do so go to the XML of the main activity and in the search bar type "frag…". A NavHostFragment will show up. Click and drag the NavHostFragment to the main activity layout:
 
 <img src="README%20Images/nevhost.jpg" width="400">
 
-Select my_nev and click ok 
+- Select my_nev and click ok 
 
 <img src="README%20Images/selectnev.jpg" width="400">
 
@@ -111,11 +111,11 @@ It should look like this:
 
 <img src="README%20Images/codexml.jpg" width="400">
 
-Now we will go to the fragment_main.xml and add a button and some text to the fragment. To do so go to the xml file and select the code view:
+- Now we will go to the fragment_main.xml and add a button and some text to the fragment. To do so go to the xml file and select the code view:
 
 <img src="README%20Images/mainfrag.jpg" width="400">
 
-Check if the layout type is constraintlayout or not. If its not replace FrameLayout with the following code 
+- Check if the layout type is constraintlayout or not. If its not replace FrameLayout with the following code 
 
 ```Kotlin
 androidx.constraintlayout.widget.ConstraintLayout
@@ -126,7 +126,7 @@ Before                                                    |  After
 :--------------------------------------------------------:|:-----------------------------------------------------:
  <img src="README%20Images/cahnge.jpg" width="400">       |  <img src="README%20Images/cahngegg.jpg" width="400">
 
-Now add the following code to make the button and the text of the fragment:
+- Now add the following code to make the button and the text of the fragment:
 
 ```Kotlin
 <TextView
@@ -151,7 +151,7 @@ Now add the following code to make the button and the text of the fragment:
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 ```
-And add the following code to the xml of the second Fragment:
+- And add the following code to the xml of the second Fragment:
 
 ```Kotlin
 <TextView
@@ -170,12 +170,12 @@ Now go to the MainFragment.kt and clear it of all code except of onCreateView. S
 
 <img src="README%20Images/mainfrag.jpg" width="400">
 
-Connect the Fragment to the xml file. To do so add the following code to the Fragment():
+- Connect the Fragment to the xml file. To do so add the following code to the Fragment():
 
 ```Kotlin
 R.layout.fragment_main
 ```
-Then edit the code to bind the xml to the fragemtn and add a setOnClickLisener on the button we created with the following code:
+- Then edit the code to bind the xml to the fragemtn and add a setOnClickLisener on the button we created with the following code:
 
 ```Kotlin
 class MainFragment : Fragment(R.layout.fragment_main) {
