@@ -83,7 +83,7 @@ Now we are ready to start creating the project itself. To start, go to the resou
 
 <img src="README%20Images/createdfragemnts.jpg" width="400">
 
-- Now click and drag the little bubble on the right side of the mainFragment and connect it to secondFragment. Then do the same thing back, it should look like this:
+- If you hover over the "mainFragment" layout a bobble will appear on the side of it. Click it and drag it to the right side of the secondFragment. Then do the same thing back. It should look like this:
 
 <img src="README%20Images/dothesameback.jpg" width="400">
 
