@@ -39,7 +39,7 @@ Should look like this:
 
 <img src="README%20Images/mbuildgradle.jpg" width="400">
 
-- Add the following plugin to the plugins block 
+- Add the following plugin to the plugins block:
 
 ```Kotlin
 id 'androidx.navigation.safeargs'
