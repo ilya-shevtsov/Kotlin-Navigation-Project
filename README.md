@@ -121,7 +121,80 @@ Should look like this:
 
 Before                                                    |  After
 :--------------------------------------------------------:|:-----------------------------------------------------:
- <img src="README%20Images/cahnge.jpg" width="400">     |  <img src="README%20Images/cahngegg.jpg" width="400">
+ <img src="README%20Images/cahnge.jpg" width="400">       |  <img src="README%20Images/cahngegg.jpg" width="400">
 
+Now add the following code to make the button and the text of the fragment:
 
+```Kotlin
+<TextView
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:text="This is the First Fragment"
+    android:textSize="30sp"
+    android:textAlignment="center"
+    app:layout_constraintBottom_toTopOf="@id/button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
 
+<Button
+    android:id="@+id/button"
+    android:layout_width="280dp"
+    android:layout_height="55dp"
+    android:text="To Next Fragment"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+```
+And add the following code to the xml of the second Fragment:
+
+```Kotlin
+<TextView
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:text="This is the Second Fragment"
+    android:textSize="30sp"
+    android:textAlignment="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+```
+Now go to the MainFragment.kt and clear it of all code except of onCreateView. Should look like this:
+
+<img src="README%20Images/mainfrag.jpg" width="400">
+
+Connect the Fragment to the xml file. To do so add the following code to the Fragment():
+
+```Kotlin
+R.layout.fragment_main
+```
+Than edit the code to bind the xml to the fragemtn and add a setOnClickLisener on the button we created with the following code:
+
+```Kotlin
+class MainFragment : Fragment(R.layout.fragment_main) {
+
+    private lateinit var binding: FragmentMainBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+
+        binding = FragmentMainBinding.inflate(inflater,container,false)
+
+        binding.button.setOnClickListener {
+            findNavController().navigate(R.id.secondFragment)
+        }
+        return binding.root
+
+    }
+}
+```
+
+Should look like this:
+
+<img src="README%20Images/mainFreagemnt.jpg" width="400">
