@@ -176,7 +176,7 @@ Now go to the MainFragment.kt and clear it of all code except of onCreateView. S
 ```Kotlin
 R.layout.fragment_main
 ```
-- Then edit the code to bind the xml to the fragemtn and add a setOnClickLisener on the button we created with the following code:
+- Now we have to edit the code of the fragment to bind the XML file to the fragment. We will also add a "setOnClickLisener" on the button we created with the following code:
 
 ```Kotlin
 class MainFragment : Fragment(R.layout.fragment_main) {
