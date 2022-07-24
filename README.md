@@ -172,7 +172,7 @@ Connect the Fragment to the xml file. To do so add the following code to the Fra
 ```Kotlin
 R.layout.fragment_main
 ```
-Than edit the code to bind the xml to the fragemtn and add a setOnClickLisener on the button we created with the following code:
+Then edit the code to bind the xml to the fragemtn and add a setOnClickLisener on the button we created with the following code:
 
 ```Kotlin
 class MainFragment : Fragment(R.layout.fragment_main) {
@@ -198,3 +198,9 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 Should look like this:
 
 <img src="README%20Images/mainFreagemnt.jpg" width="400">
+
+Do the same steps (except the button part) to the second fragment. Should look like this:
+
+<img src="README%20Images/secondfragemnt.jpg" width="400">
+
+That’s it, now build the project. If you click the button, it will take you to the second fragment if you click back arrow, it will take you back.
