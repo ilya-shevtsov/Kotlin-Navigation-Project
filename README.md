@@ -207,4 +207,4 @@ Do the same steps (except the button part) to the second fragment. Should look l
 
 <img src="README%20Images/secondfragemnt.jpg" width="400">
 
-That’s it, now build the project. If you click the button, it will take you to the second fragment if you click back arrow, it will take you back.
+That’s it! Now you have a project that uses the Navigation feature to switch between the fragments. If you click the button, it will take you to the second fragment and if you click "Back Arrow", it will take you back.
