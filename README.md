@@ -87,7 +87,8 @@ Now we are ready to start creating the project itself. To start, go to the resou
 
 <img src="README%20Images/dothesameback.jpg" width="400">
 
-- Now you have to create a Nev Host fragment (our Main activity). To do so go to the XML of the main activity and in the search bar type "frag…". A NavHostFragment will show up. Click and drag the NavHostFragment to the main activity layout:
+Now you have to create a Nev Host fragment (our Main activity). To do so go to the XML of the main activity and in the search bar type "frag…". A NavHostFragment will show up. 
+- Click and drag the NavHostFragment to the main activity layout:
 
 <img src="README%20Images/nevhost.jpg" width="400">
 
