@@ -114,7 +114,7 @@ It should look like this:
 
 - Now we will go to the fragment_main.xml and add a button and some text to the fragment. To do so go to the xml file and select the code view:
 
-<img src="README%20Images/mainfrag.jpg" width="400">
+<img src="README%20Images/codesection.jpg" width="400">
 
 - Check if the layout type is constraintlayout or not. If its not replace FrameLayout with the following code 
 
