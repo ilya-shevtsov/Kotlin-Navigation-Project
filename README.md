@@ -1,4 +1,4 @@
-# Kotlin Navigation Project
+# Kotlin project with Navigation feature 
 This is a Kotlin project that uses navigation feature to navigate between fragments. You can clone it and use it or follow the instructions and make one yourself.  
 Here is the complete guide to make such project yourself. To make a project I will be using IntelliJ IDEA.
 
