@@ -99,7 +99,7 @@ Now you have to create a Nev Host fragment (our Main activity). To do so go to t
 
 ## 4. Editing fragments
 
-After that go to the code section of the main_activity xml and add the constraints for the fragment. Add the following code to the bottom of fragment code:
+After that navigate to the code section of the Main Activity XML file and add the constraints. To do so, add the following code to the bottom of Fragment Container View code:
 
 ```Kotlin
 app:layout_constraintBottom_toBottomOf="parent"
