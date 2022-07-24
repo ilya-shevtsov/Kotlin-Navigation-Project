@@ -2,7 +2,7 @@
 This is a Kotlin project that uses navigation feature to navigate between fragments. You can clone it and use it or follow the instructions and make one yourself.  
 Here is the complete guide to make such project yourself. To make a project I will be using IntelliJ IDEA.
 
-## Creating a project
+## 1. Creating a project
 
 First thing you have to is to create a project. To do so, go to the File – New – New Project
 
@@ -14,7 +14,7 @@ For the purposes of demonstration, we will be starting from an Empty Activity. S
 
 Name you application and click Finish.
 
-## Setting up the gradle files
+## 2. Setting up the gradle files
 
 Lets setup the Gradle files. In this project we will be using View binding feature, so we have to add it to our project, as well as the necessary imports and dependencies for using the navigation feature. The build.gradle files are located here.
 
@@ -60,7 +60,7 @@ Should look like this:
 
 <img src="README%20Images/androids.jpg" width="400">
 
-## Creating a navigation graph
+## 3. Creating a navigation graph
 
 Now we are ready to start creating the project itself. To start, go to the resources manager on the left side of android studio. Select the navigation tab and click the plus sign. 
 
@@ -96,7 +96,7 @@ Now we are ready to start creating the project itself. To start, go to the resou
 <img src="README%20Images/selectnev.jpg" width="400">
 
 
-## Editing fragments
+## 4. Editing fragments
 
 After that go to the code section of the main_activity xml and add the constraints for the fragment. Add the following code to the bottom of fragment code:
 
