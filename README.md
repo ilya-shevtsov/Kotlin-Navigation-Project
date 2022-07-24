@@ -95,6 +95,9 @@ Select my_nev and click ok
 
 <img src="README%20Images/selectnev.jpg" width="400">
 
+
+## Editing fragments
+
 After that go to the code section of the main_activity xml and add the constraints for the fragment. Add the following code to the bottom of fragment code:
 
 ```Kotlin
